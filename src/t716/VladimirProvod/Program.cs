@@ -2,7 +2,6 @@
 using System.Collections.Generic;
 using System.Linq;
 using System.Text;
-using System.Runtime.InteropServices;
 using System.Threading.Tasks;
 using System.Threading;
 using System.Diagnostics;
@@ -11,10 +10,6 @@ namespace ConsoleApp3
 {
     class Program
     {
-        [DllImport("msvcrt")]
-        static extern int _getch();
-        public static int choice = 0;
-
         static void FirstType()
         {
             Console.WriteLine("   {0,-40}{1,-15}{2,-15}{3,-15}   \n", "Name", "   PID", "     CPU", "         RAM");

@@ -25,7 +25,8 @@ namespace PCLoad
         }
         public void VerticalPB()
         {
-            PerformanceCounter cpu = new PerformanceCounter("Processor Information", "% Processor Time", "_Total"); for (int i = 0; i < 9; i++)
+            PerformanceCounter cpu = new PerformanceCounter("Processor Information", "% Processor Time", "_Total"); 
+            for (int i = 0; i < 9; i++)
             {
                 Console.Write("|");
                 int cpuusage = (int)cpu.NextValue();

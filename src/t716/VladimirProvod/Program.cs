@@ -66,8 +66,7 @@ namespace PCLoad
             drawing.Table();
         }
         public void SecondMonitor()
-        {
-            
+        {         
             ProgressBar drawing = new ProgressBar();
             drawing.HorizontalPB();
             drawing.VerticalPB();
